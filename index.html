@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/d7bcd1a32c.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Lab 5</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header-nav">
+            <div class="menu">
+                <li><a class="active">MAIN</a></li>
+                <li><a>EXAMPLE</a></li>
+                <li><a>EXAMPLE</a></li>
+            </div>
+        </div>
+        <header>
+            <div class="heading"><h1>Лабораторна №5</h1></div>
+            <div class="wrapper">
+                <div class="text" id="div_text1">
+                    <p><em>HTML</em> - це мова гіпертекстової розмітки для веб-сторінок. Вона визначає структуру і зміст сторінки, включаючи 
+                    текстовий контент, зображення, посилання, форми і багато іншого.
+                    <em>CSS</em> - це мова таблиць стилей, яка відповідає за оформлення і стиль веб-сторінок. 
+                    За допомогою CSS ви можете встановлювати кольори, шрифти, розташування елементів, розміри тексту, фони та інші візуальні атрибути сторінки.
+                    Вони доповнюють один одного, щоб створити повноцінний інтернет-зміст, який може бути доступним 
+                    і зрозумілим для користувачів та привабливим для ока.</p>
+                </div>   
+                <button class="btn" onclick="swapText()">Змінити текст місцями</button>
+            </div>
+        </header>
+        <main>
+            <nav>
+                <ul class="menu">
+                    <li><a class="active">MAIN</a></li>
+                    <li><a>EXAMPLE</a></li>
+                    <li><a>EXAMPLE</a></li>
+                </ul>
+            </nav>
+            <section class="center">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo molestias voluptate soluta, unde natus error corrupti fugit non id, dicta incidunt omnis 
+                    rerum distinctio maiores earum porro similique debitis labore impedit! Mollitia, quae eligendi. Veritatis provident odit facere totam deserunt animi ducimus alias 
+                    sunt sapiente voluptatibus, dolores assumenda quae. Unde, culpa consectetur. Ducimus, optio. Rem, qui. Obcaecati explicabo quo ea odit earum nulla pariatur, quae 
+                    laudantium, vel recusandae repellendus quibusdam accusantium tempora quam reprehenderit non accusamus consequatur, vero ex libero totam corrupti esse. Nemo corporis 
+                    similique saepe, natus eligendi aliquam, eos quod in sit necessitatibus sunt est ea cumque ut sapiente ipsam reprehenderit laboriosam alias dolorem, voluptates 
+                    voluptatibus ad. Natus inventore vitae, molestiae similique ipsa cupiditate cumque voluptates, magnam fugit rerum mollitia?Nemo corporis 
+                    similique saepe, natus eligendi aliquam, eos quod in sit necessitatibus sunt est ea cumque ut sapiente ipsam reprehenderit laboriosam alias dolorem, voluptates 
+                    voluptatibus ad. Natus inventore vitae, molestiae similique ipsa cupiditate cumque voluptates, magnam fugit rerum mollitia?
+                </p>
+                <img class="some-img" src="img/some_img.jpg" alt="Якесь зображення" onmouseleave="show(3)" onmouseenter="hide(3)">
+                <div class="block" id="block3">
+                    <form id="form3" onsubmit="event.preventDefault();">
+                      <label for="inputBlock3" id="label3">Введіть кількість клітинок:</label>
+                      <input id="inputBlock3" type="number" max="100" min="1" required>
+                      <button class="btn" pattern="[0-9]*" id="confirmButtonBlock3" onclick="confirmTable(3)">Створити клітинки</button>
+                      <div class="tableContainerBlock" id="tableContainerBlock3"></div>
+                      <button class="btn saveButtonBlock" id="saveButtonBlock3" onclick="saveTableData(3)">Зберегти таблицю</button>
+                    </form>
+                    <div class="tableBlock" id="tableBlock3"></div>
+                </div>
+            </section>
+            <section class="right">
+                <section class="top">
+                    <div class="container">
+                        <p>Корисні посилання для вивчення CSS та HTML:</p>
+                        <div class="icon-wrapper">
+                            <a href="https://www.freecodecamp.org/" target="_blank" title="freecodecamp" ontouchstart="show(4)" onmouseleave="show(4)" onmouseenter="hide(4)"><i class="fa-brands fa-free-code-camp"></i></a>
+                        <a href="https://drive.google.com/drive/folders/1T5n8_T8mLExEp6aSJg4ylQrC0sJLxJGB" target="_blank" title="Google Drive" ontouchstart="show(4)" onmouseleave="show(4)" onmouseenter="hide(4)"><i class="fa-brands fa-google-drive"></i></a>
+                        </div>
+                        <div class="block" id="block4">
+                            <form id="form4" onsubmit="event.preventDefault();">
+                              <label for="inputBlock4" id="label4">Введіть кількість клітинок:</label>
+                              <input id="inputBlock4" type="number" max="100" min="1" required>
+                              <button class="btn" pattern="[0-9]*" id="confirmButtonBlock4" onclick="confirmTable(4)">Створити клітинки</button>
+                              <div class="tableContainerBlock" id="tableContainerBlock4"></div>
+                              <button class="btn saveButtonBlock" id="saveButtonBlock4" onclick="saveTableData(4)">Зберегти таблицю</button>
+                            </form>
+                            <div class="tableBlock" id="tableBlock4"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bottom">
+                    <section class="first">
+                        <div class="list-container">
+                            <p>Основні контейнери в HTML:</p>
+                            <ol class="list">
+                                <li>&lthtml&gt</li>
+                                <li>&lthead&gt</li>
+                                <li>&ltbody&gt</li>
+                                <ul class="list">
+                                    <li>&lth1&gt</li>
+                                    <li>&ltdiv&gt</li>
+                                    <li>&ltheader&gt</li>
+                                    <li>&ltmain&gt</li>
+                                    <li>&ltfooter&gt</li>
+                                    <li>&ltsection&gt</li>
+                                    <li>&ltp&gt</li>
+                                    <li>&lta&gt</li>
+                                    <li>&ltimg&gt</li>
+                                </ul>
+                            </ol>
+                        </div>
+                        <button class="btn" onclick="displayCircleArea()">Рандомна площа кола</button>
+                        <form id="form1" onsubmit="event.preventDefault(); findMinDigit();">
+                            <label for="userInput">Введіть натуральне число:</label>
+                            <input type="number" min="1" max="99999999999999" id="userInput" name="userInput" pattern="[0-9]*" title="Тільки натуральні числа" required autocomplete="off">
+                            <button class="btn" type="submit">Знайти найменшу цифру</button>
+                        </form>
+                        <p id="circle_area"></p>
+                    </section>
+                    <section class="second">
+                        <div class="list-container">
+                            <p>Основні селектори в СSS:</p>
+                            <ul class="list">
+                                <li>Селектори елементів</li>
+                                <li>Селектори класів</li>
+                                <li>Селектори ідентифікаторів</li>
+                                <li>Комбінаторні селектори</li>
+                                <li>Псевдо класи</li>
+                                <li>Псевдо елементи</li>
+                            </ul>
+                        </div>
+                        <div class="list-container">
+                        <p>Основні комбінатори в СSS:</p>
+                            <ul class="list">
+                                <li>Комбінатор нащадка (пробіл)</li>
+                                <li>Дочірній комбінатор (>)</li>
+                                <li>Комбінатор сусіднього брата (+)</li>
+                                <li>Загальний комбінатор братів і сестер (~)</li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="text">
+                    <p><em>CSS Grid</em> - це мощний і гнучкий спосіб створення сіток для веб-сторінок у веб-розробці. 
+                        Він надає контроль над розміщенням і розташуванням елементів на сторінці, дозволяючи розподіляти простір на різні колонки та рядки, 
+                        що дозволяє створювати складні макети з легкістю.
+                    <em>CSS Grid</em> надає можливість створювати двовимірні сітки, де ви можете контролювати як розміщення елементів по горизонталі, 
+                    так і по вертикалі.</p>
+                </div>
+                <img class="some-img" src="img/some_img.jpg" alt="Якесь зображення" ontouchstart="show(7)" onmouseleave="show(7)" onmouseenter="hide(7)">
+                <div class="block" id="block7">
+                    <form id="form7" onsubmit="event.preventDefault();">
+                      <label for="inputBlock7" id="label7">Введіть кількість клітинок:</label>
+                      <input id="inputBlock7" type="number" max="100" min="1" required>
+                      <button class="btn" pattern="[0-9]*" id="confirmButtonBlock7" onclick="confirmTable(7)">Створити клітинки</button>
+                      <div class="tableContainerBlock" id="tableContainerBlock7"></div>
+                      <button class="btn saveButtonBlock" id="saveButtonBlock7" onclick="saveTableData(7)">Зберегти таблицю</button>
+                    </form>
+                    <div class="tableBlock" id="tableBlock7"></div>
+                </div>
+            </div>
+            <div class="heading">
+                <h1>
+                    <a href="https://github.com/ArtemKr2" target="_blank" title="Перехід на GitHub" class="link">Кривіцький Артем</a>
+                </h1>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
