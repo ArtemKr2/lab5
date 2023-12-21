@@ -117,7 +117,7 @@ document.addEventListener("mouseup", function () {
         selected.removeAllRanges();
     }
 });
-
+// перевірка на виділений текст на телефонах
 document.addEventListener("touchend", function () {
     const selected = document.getSelection();
     
